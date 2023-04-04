@@ -1,0 +1,78 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: #FFFFFF;
+	--text: #DBDBDB;
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--userfont: inter, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/Inter-Medium.woff2") format("woff2"); font-family: "inter"; font-weight: 500; font-style: normal; }
+@font-face { src: url("../fonts/Inter-SemiBold.woff2") format("woff2"); font-family: "inter"; font-weight: 600; font-style: normal; }
+@font-face { src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"); font-family: "inter"; font-weight: 800; font-style: normal; }
+@font-face { src: url("../fonts/NeueHaasDisplay-Medium.woff2") format("woff2"); font-family: "Neue Haas Grotesk"; font-weight: 500; font-style: normal; }
+@font-face { src: url("../fonts/NeueHaasDisplay-Bold.woff2") format("woff2"); font-family: "Neue Haas Grotesk"; font-weight: 700; font-style: normal; }
+
+/* GENERAL CSS SETTINGS */
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	background-color: #000;
+}
+
+/* USER STYLES */
+
+.image {
+	max-width: 100%;
+	margin-bottom: var(--bs-gutter-x);
+	border-radius: 4px;
+}
+
+.accent {
+	color: var(--accent);
+	font-weight: normal;
+}
+
+.head-section{
+	height: 1vh;
+	background-image: url(../images/planet.jpg);
+	background-size: cover;
+}
+
+.top-nav{
+	display: flex;
+	justify-content: space-around;
+	/* margin-top:  39px; */
+}
+
+.main-nav ul{
+	display: flex;
+	list-style-type: none;
+}
+
+.main-nav ul a{
+	color: var(--text);
+	padding: 10px 20px;
+	
+}
