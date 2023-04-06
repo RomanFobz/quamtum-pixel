@@ -76,6 +76,6 @@ body {
 .main-nav ul a{
 	color: var(--text);
 	padding: 10px 20px;
-	text-decoration: none;
+	/* text-decoration: none; */
 	
 }
