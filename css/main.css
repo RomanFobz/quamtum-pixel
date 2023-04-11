@@ -54,6 +54,9 @@ body {
 	font-weight: normal;
 }
 
+.container{
+	width: 1600px;
+}
 .head-section{
 	min-height: 100vh;
 	width: 100%;
@@ -66,6 +69,7 @@ body {
 
 .top-nav{
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -75,10 +79,14 @@ body {
 	flex-shrink: 1;
 	display: block;
 	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .main-nav ul{
 	display: flex;
+	align-items: center;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -88,6 +96,19 @@ body {
 	color: var(--text);
 	padding: 10px 20px;
 	text-decoration: none;	
+}
+
+.switch-group{
+	display: flex;
+}
+
+.switch-group{
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	i
 }
 
 .switch-group a{
@@ -107,6 +128,7 @@ body {
 	height: 8px;
 	background-color: #fff;
 	border-radius: 50%;
+	display: inline-flex;
 }
 
 .switch-group button{
