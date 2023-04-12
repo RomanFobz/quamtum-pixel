@@ -54,9 +54,15 @@ body {
 	font-weight: normal;
 }
 
-.container{
-	width: 1600px;
+.main-container{
+	width: 1500px;
+	margin: 0 auto;
 }
+
+.logo{
+	width: 120px;
+}
+
 .head-section{
 	min-height: 100vh;
 	width: 100%;
@@ -98,20 +104,24 @@ body {
 	text-decoration: none;	
 }
 
-.switch-group{
-	display: flex;
-}
 
 .switch-group{
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	i
+}
+
+.switch-group li{
+	margin-right: 8px;
 }
 
 .switch-group a{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 	padding: 12px 20px;
 	border-radius: 40px;
 	border: 1px solid transparent;
@@ -126,12 +136,15 @@ body {
 	content: " ";
 	width: 8px;
 	height: 8px;
+	margin-right: 8px;
 	background-color: #fff;
 	border-radius: 50%;
 	display: inline-flex;
 }
 
 .switch-group button{
+	display: flex;
+	align-items: center;
 	padding: 9px 30px;
 	text-transform: uppercase;
 	color: #000;
@@ -139,6 +152,21 @@ body {
 	font-size: 14px;
 	border-radius: 40px;
 	border: 1px solid transparent;
+}
+
+.switch-group li:nth-child(2){
+	margin-right: 28px;
+}
+
+.form-button::after{
+	content: " ";
+	background-image: url(/images/Arrow.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin-left: 6px;
 }
 
 .switch-group a:hover, .switch-group button:hover{
