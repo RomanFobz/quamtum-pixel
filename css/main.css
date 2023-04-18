@@ -55,7 +55,8 @@ body {
 }
 
 .main-container{
-	width: 1500px;
+	width: 1480px;
+	padding: 20px;
 	margin: 0 auto;
 }
 
